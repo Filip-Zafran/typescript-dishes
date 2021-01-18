@@ -1,7 +1,6 @@
 import React from 'react'
 
-
-export default function Details() {
+export default function DishOne() {
     return (
         <div>
             

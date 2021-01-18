@@ -1,14 +1,20 @@
 import React from 'react'
-import { Header, Image } from 'semantic-ui-react'
+import { Header, Image } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 export function DishesContainer() {
+
+
+
   return (
     <div className="dishes-container">
       <Header as='h2'>List of Dishes</Header>
       <ul>
         <li>
-          <p>Dish 1  </p>
-          <Image src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F67%2FEataly_Las_Vegas_-_Feb_2019_-_Stierch_12.jpg%2F1200px-Eataly_Las_Vegas_-_Feb_2019_-_Stierch_12.jpg&f=1&nofb=1' size='small' />
+          
+          <Link to="/dishesDetails/Dish-1">
+   
+        </Link>
         </li>
 
         <li>
@@ -21,6 +27,7 @@ export function DishesContainer() {
            <Image src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F32%2F188132-050-E4D1C04E%2FHaggis.jpg&f=1&nofb=1' size='small' />
          </li>
       </ul>
+
 
     </div>
   );
