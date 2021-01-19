@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image } from 'semantic-ui-react'
 
-export default function Dish() {
+export function Dish() {
     return (
         <div>
                    <p>Dish 1  </p>
