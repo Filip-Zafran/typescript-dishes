@@ -12,11 +12,12 @@ function App() {
    
     <Router>
       <div className="App">
-      <Header id="header" inverted as='h1'>Dishes Project</Header>
+        <Header id="header" inverted as='h1'>Dishes Project</Header>
+  
       
       <Switch>
         
-          <Route path="/" >
+          <Route path="/" component={LandingPage}>
               <LandingPage />
         </Route>
         
@@ -27,8 +28,10 @@ function App() {
           <Route exact path="/list" component={DishesList}>
              <DishesList />
         </Route>
-        
+
         </Switch>
+        <br />
+                 <CreateDish />
         </div>
         </ Router>
 
