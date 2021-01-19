@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header, Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import {Dish} from './Dish'
+import Dish from './Dish'
 
 export function DishesList() {
 
@@ -12,7 +12,7 @@ export function DishesList() {
       <ul>
         <li>
           <Dish />
-          <Link to="/dishesDetails/Dish-1">
+          <Link to="/dish/:id">
    
         </Link>
         </li>

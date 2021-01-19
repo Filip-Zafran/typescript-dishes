@@ -21,3 +21,8 @@ li {
 .create-dish {
   padding-top: 50px;
 }
+
+.style-bullets-checkboxes {
+  display: flex;
+  justify-content: space-around;
+}

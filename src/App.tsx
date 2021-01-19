@@ -5,7 +5,7 @@ import { Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 import { DishesList } from './components/DishesList'
 import { LandingPage } from './components/LandingPage'
 import { CreateDish } from './components/CreateDish'
-import { Dish } from './components/Dish'
+import Dish  from './components/Dish'
 
 
 function App() {
