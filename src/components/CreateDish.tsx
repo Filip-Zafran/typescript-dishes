@@ -1,8 +1,5 @@
-import React from 'react';
-import { Header, Input, TextArea, Radio, Checkbox, Dropdown } from 'semantic-ui-react';
-
-
-export function CreateDish() {
+import { Header, Input, TextArea, Radio, Checkbox, Dropdown, Container, Grid } from 'semantic-ui-react';
+import React, { Fragment } from 'react';
 
 const ingredience = [
   {
@@ -26,9 +23,17 @@ const ingredience = [
     value: 'Heat up'
   },
 ]
+const CreateDish = () => {
+  return (
+    <Fragment>
+      <Container>
+        <Grid.Row>
+          <Grid.Column width={5}>
+            
+          </Grid.Column>
 
-    return (
-        <div className='create-dish'>
+
+          <Grid.Column width={6}>
             <Header as='h2'>Create your Dish</Header>
             <Input label='Create Name:' placeholder='ex. "Broccoli extravaganza"' />
 
@@ -50,20 +55,30 @@ const ingredience = [
             <Checkbox label='Rice' />
             <Checkbox label='Potatoes' />
 
-            
+
             <h4>Do you need to:</h4>
             <Dropdown
-                placeholder='Select Friend'
-                fluid
-                selection
-                options={ingredience}
+              placeholder='Select Friend'
+              fluid
+              selection
+              options={ingredience}
             />
 
             <h4>Tell us a bit about the dish</h4>
             <TextArea placeholder='Dish background' />
-        
-        </div>
+          </Grid.Column>
 
+
+          <Grid.Column width={5}>
+            
+          </Grid.Column>
+        </Grid.Row>
         
-    )
+
+      </Container>
+    </Fragment>
+    
+  )
 }
+
+export default CreateDish;
