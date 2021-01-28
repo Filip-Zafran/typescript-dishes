@@ -29,7 +29,7 @@ const ingredience = [
 // create a model class for dish.ts
 
 interface IDish {
-  key: any;
+  key: string;
   name: string;
   lenght?: number;
   ingredience?: string;

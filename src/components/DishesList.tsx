@@ -35,7 +35,7 @@ const dishExampleArray: any[] = [
   ingredience: ['ingrediend1', 'ingrediend2'],
   cook: 'bake',
   info: 'Lorem ipsum dolor sit amet, ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    vegan: false
+  vegan: false
   }, 
    
   { key: 'test3', 
@@ -44,7 +44,7 @@ const dishExampleArray: any[] = [
   ingredience: ['ingrediend1', 'ingrediend2', 'ingrediend2'],
   cook: 'cook',
   info: 'Lorem ipsum dolor sit amet,',
-    vegan: true
+  vegan: true
   }
    
 ]
