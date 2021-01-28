@@ -1,4 +1,4 @@
-import { Header, Input, TextArea, Radio, Checkbox, Dropdown, Container, Grid } from 'semantic-ui-react';
+import { Button, Header, Input, TextArea, Radio, Checkbox, Dropdown, Container, Grid } from 'semantic-ui-react';
 import React, { Fragment } from 'react';
 
 
@@ -86,10 +86,11 @@ const CreateDish = ({ name = 'Dish name' }: IDish) => {
 
             <h4>Is it a vegan dish:</h4>
             <Checkbox label='Yes' />
-
+          <br />
+          <br/>
           <Button type="submit">Save Dish</Button>
-
-
+          <br/>
+          <br/>
           <Grid.Column width={5}>
             
           </Grid.Column>
