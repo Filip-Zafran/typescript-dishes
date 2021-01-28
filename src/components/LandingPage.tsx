@@ -5,7 +5,7 @@ import { Button } from 'semantic-ui-react'
 export function LandingPage() {
     return (
         <div>
-            <Button.Group>
+            <Button.Group className='buttons-container'>
                 <Link to="/create">
                     <Button>Create Your Dish</Button>
                 </Link>

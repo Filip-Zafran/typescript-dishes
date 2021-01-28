@@ -2,22 +2,19 @@ import React from 'react'
 import { Header, Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Dish from './Dish'
-
+ 
 
 // create a model class for dish.ts
-// export interface IActivity {
-//   id: string,
-//   title: string,
-//   description: string,
-//   category: string,
-//   date: Date,
-//   city: string,
-//   venue: string,
-//   isGoing: boolean, // specific to currentlyLoggedIn user
-//   isHost: boolean, // specific to currentlyLoggedIn user
-//   attendees: IAttendee[]
-//   comments: IComment[]
-// }
+
+interface IDishModel {
+  name: string;
+  lenght: number;
+  ingredience: string;
+  cook: string;
+  info: string;
+  vegan: boolean;
+}
+
 
 // create a dish[] : IDish[] you can create 2 or 3 objects
 export function DishesList() { // you will get 'id' here

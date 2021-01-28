@@ -64,9 +64,14 @@ const CreateDish = () => {
               options={ingredience}
             />
 
+
+
             <h4>Tell us a bit about the dish</h4>
             <TextArea placeholder='Dish background' />
           </Grid.Column>
+
+            <h4>Is it a vegan dish:</h4>
+            <Checkbox label='Yes' />
 
 
           <Grid.Column width={5}>
