@@ -1,6 +1,7 @@
 import { Header, Input, TextArea, Radio, Checkbox, Dropdown, Container, Grid } from 'semantic-ui-react';
 import React, { Fragment } from 'react';
 
+
 const ingredience = [
   {
     key: 'Cook',
@@ -23,7 +24,20 @@ const ingredience = [
     value: 'Heat up'
   },
 ]
-const CreateDish = () => {
+
+// create a model class for dish.ts
+
+interface IDish {
+  key: any;
+  name: string;
+  lenght: number;
+  ingredience: string;
+  cook: string;
+  info: string;
+  vegan: boolean;
+}
+
+const CreateDish = ({ name = 'Dish name' }: IDish) => {
   return (
     <Fragment>
       <Container>
@@ -72,6 +86,8 @@ const CreateDish = () => {
 
             <h4>Is it a vegan dish:</h4>
             <Checkbox label='Yes' />
+
+          <Button type="submit">Save Dish</Button>
 
 
           <Grid.Column width={5}>

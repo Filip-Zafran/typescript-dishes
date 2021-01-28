@@ -1,19 +1,11 @@
-import React from 'react'
-import { Header, Image } from 'semantic-ui-react';
+import React from 'react';
+import { Header } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+
 import Dish from './Dish'
  
 
-// create a model class for dish.ts
 
-interface IDishModel {
-  name: string;
-  lenght: number;
-  ingredience: string;
-  cook: string;
-  info: string;
-  vegan: boolean;
-}
 
 
 // create a dish[] : IDish[] you can create 2 or 3 objects
