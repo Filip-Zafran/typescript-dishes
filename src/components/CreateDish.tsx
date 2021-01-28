@@ -1,5 +1,6 @@
-import { Button, Header, Input, TextArea, Radio, Checkbox, Dropdown, Container, Grid } from 'semantic-ui-react';
 import React, { Fragment } from 'react';
+import { Button, Header, Input, TextArea, Radio, Checkbox, Dropdown, Container, Grid } from 'semantic-ui-react';
+
 
 
 const ingredience = [
@@ -30,17 +31,26 @@ const ingredience = [
 interface IDish {
   key: any;
   name: string;
-  lenght: number;
-  ingredience: string;
-  cook: string;
-  info: string;
-  vegan: boolean;
+  lenght?: number;
+  ingredience?: string;
+  cook?: string;
+  info?: string;
+  vegan?: boolean;
+}
+
+
+function submitDish(event: any) {
+  event.preventDefault();
+  console.log('create dish', CreateDish)
 }
 
 const CreateDish = ({ name = 'Dish name' }: IDish) => {
   return (
     <Fragment>
       <Container>
+
+        <form id='test' onSubmit={submitDish}> 
+
         <Grid.Row>
           <Grid.Column width={5}>
             
@@ -95,6 +105,8 @@ const CreateDish = ({ name = 'Dish name' }: IDish) => {
             
           </Grid.Column>
         </Grid.Row>
+
+        </form>
         
 
       </Container>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Header } from 'semantic-ui-react';
-import { Route, BrowserRouter as Router, Switch} from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 import { DishesList } from './components/DishesList'
 import { LandingPage } from './components/LandingPage'
 import CreateDish from './components/CreateDish'
